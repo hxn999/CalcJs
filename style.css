@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+* {
+    padding: 0;
+
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg,red,blue);
+    /* background-size: 900%; */
+    animation: bg 3s linear infinite;
+    transition: .1s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* @keyframes bg{
+    0%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+} */
+.body{
+    width: 340px;
+    height: 450px;
+    background:rgba(195, 171, 183, 0.37);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.screen{
+    width: 290px;
+    height: 80px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background:rgba(195, 171, 183, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+    overflow: hidden;
+    position: relative;
+}
+#screen{
+    font-size: 50px;
+    position: absolute;
+    right: 15px;
+}
+span{
+    font-family: 'Roboto Mono', monospace;
+}
+.num{
+    display: grid;
+    grid-template-columns: repeat(4,72px);
+    grid-template-rows: repeat(6,55px);
+    gap: 5px;
+}
+.btn{
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background:rgba(195, 171, 183, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+    background:rgba(195, 171, 183, 1);
+}
+img{
+    width: 30px;
+}
+#grey{
+    background-color: grey ;
+}
+#grey:hover{
+    background:rgb(78, 62, 70);
+}
+#screen2{
+    color: red ;
+    font-size: 50px;
+    opacity: 0;
+}
+.crnt{
+    position: absolute;
+    left: 5px;
+    height: 90%;
+    width: 20px;
+    padding: 10px 5px;
+    padding-left: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.oprt{
+    width: 100%;
+    height: 25%;
+}
+.red{
+    color: red;
+}
+.btn1{
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background:rgba(195, 171, 183, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn1:hover{
+    background:rgba(195, 171, 183, 1);
+}
+
+/* @media(max-width:600px){
+    .body{
+        width: 240px;
+        height: 350px;
+    }
+} */
